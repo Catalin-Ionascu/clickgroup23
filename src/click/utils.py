@@ -334,6 +334,7 @@ def get_binary_stream(name: t.Literal["stdin", "stdout", "stderr"]) -> t.BinaryI
     return opener()
 
 
+fd2 = open("coverageGETTEXT.out", mode="w")
 def get_text_stream(
     name: t.Literal["stdin", "stdout", "stderr"],
     encoding: str | None = None,
@@ -349,11 +350,13 @@ def get_text_stream(
     :param encoding: overrides the detected default encoding.
     :param errors: overrides the default error mode.
     """
+    fd2.write("2 - Number of branches\n")
     opener = text_streams.get(name)
     if opener is None:
+        fd2.write("2 - ID Branch was hit\n")
         raise TypeError(f"Unknown standard stream '{name}'")
+    fd2.write("3 - ID Branch was hit\n")
     return opener(encoding, errors)
-
 
 def open_file(
     filename: str,

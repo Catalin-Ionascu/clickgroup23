@@ -37,13 +37,16 @@ def _make_text_stream(
     )
 
 
+fd3 = open("coverageASCII.out", mode="w")
 def is_ascii_encoding(encoding: str) -> bool:
+    fd3.write("2 - Number of branches\n")
     """Checks if a given encoding is ascii."""
     try:
+        fd3.write("0 - ID Branch was hit\n")
         return codecs.lookup(encoding).name == "ascii"
     except LookupError:
+        fd3.write("1 - ID Branch was hit\n")
         return False
-
 
 def get_best_encoding(stream: t.IO[t.Any]) -> str:
     """Returns the default stream encoding if not found."""
