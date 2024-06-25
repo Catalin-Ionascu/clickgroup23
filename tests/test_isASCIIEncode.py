@@ -1,4 +1,3 @@
-import pytest
 
 from click._compat import is_ascii_encoding 
 
