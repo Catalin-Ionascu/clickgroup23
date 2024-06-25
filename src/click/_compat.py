@@ -148,27 +148,36 @@ class _FixupStream:
         return True
 
 
+fd0 = open("coverage_is_binary_reader.out", mode = "w")
+
 def _is_binary_reader(stream: t.IO[t.Any], default: bool = False) -> bool:
+    fd0.write("2 - Number of branches\n")
     try:
+        fd0.write("21 - ID Branch was hit\n")
         return isinstance(stream.read(0), bytes)
     except Exception:
+        fd0.write("22 - ID Branch was hit\n")
         return default
         # This happens in some cases where the stream was already
         # closed.  In this case, we assume the default.
 
+fd1 = open("coverage_is_binary_writer.out", mode = "w")
 
 def _is_binary_writer(stream: t.IO[t.Any], default: bool = False) -> bool:
+    fd1.write("3 - Number of branches\n")
     try:
+        fd1.write("23 - ID Branch was hit\n")
         stream.write(b"")
     except Exception:
         try:
+            fd1.write("24 - ID Branch was hit\n")
             stream.write("")
             return False
         except Exception:
+            fd1.write("25 - ID Branch was hit\n")
             pass
         return default
     return True
-
 
 def _find_binary_reader(stream: t.IO[t.Any]) -> t.BinaryIO | None:
     # We need to figure out if the given stream is already binary.
