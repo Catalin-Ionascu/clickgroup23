@@ -24,7 +24,6 @@ The coverage tool used was coverage.py with command coverage run -m pytest, cove
 
 ### Your own coverage tool
 
-<The following is supposed to be repeated for each group member>
 
 **Alara Karadeniz**
 
@@ -102,7 +101,6 @@ Screenshot of instrumentation working before adding tests: ![alt text](https://g
 
 ### Individual tests
 
-<The following is supposed to be repeated for each group member>
 
 **Alara Karadeniz**
 
@@ -202,11 +200,12 @@ Screenshots of the coverage result before:
 
 ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Coverage%20report%20PROJECT%20before/coverageRunReport2.PNG)
 
-<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group> TODO!!!!
+Screenshot of the coverage result after:
+
+![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Coverage%20report%20PROJECT%20after/coverageAfterAllTests.PNG)
 
 ## Statement of individual contributions
 
-<Write what each group member did>
 
 **Alara Karadeniz** Contribution:
 
