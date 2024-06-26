@@ -26,17 +26,23 @@ The coverage tool used was coverage.py with command coverage run -m pytest, cove
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name>
+**Alara Karadeniz**
 
-<Function 1 name>
+Function 1:
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
+Name: "_get_error_message"
 
-<Provide a screenshot of the coverage results output by the instrumentation>
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/c612660fde5326be83b8cc7207100d6a13241857 
 
-<Function 2 name>
+Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20GET_ERROR_MESSAGE%20ALARA/get_error_messageBeforeImprovement.png)
 
-<Provide the same kind of information provided for Function 1>
+Function 2: 
+
+Name: "_getattr_" 
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/c612660fde5326be83b8cc7207100d6a13241857 
+
+Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20_GETATTR_%20ALARA/_getattr_BeforeImprovement.png)
 
 **Rares Stefan Dica**
 
@@ -98,21 +104,27 @@ Screenshot of instrumentation working before adding tests: ![alt text](https://g
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name>
+**Alara Karadeniz**
 
-<Test 1>
+Test 1:
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/c612660fde5326be83b8cc7207100d6a13241857 
 
-<Provide a screenshot of the old coverage results (the same as you already showed above)>
+Screenshot of old coverage: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20GET_ERROR_MESSAGE%20ALARA/get_error_messageBeforeImprovement.png)
 
-<Provide a screenshot of the new coverage results>
+Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20GET_ERROR_MESSAGE%20ALARA/get_error_messageAfterImprovement.png)
 
-<State the coverage improvement with a number and elaborate on why the coverage is improved>
+The coverage was improved by 100%, initially being 0% and now being 100%. The coverage was improved due creating 3 tests to hit each branch that exists in the function that was not hit before. 
 
-<Test 2>
+Test 2:
 
-<Provide the same kind of information provided for Test 1>
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/c612660fde5326be83b8cc7207100d6a13241857 
+
+Screenshot of old coverage: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20_GETATTR_%20ALARA/_getattr_BeforeImprovement.png)
+
+Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20_GETATTR_%20ALARA/_getattr_AfterImprovement.png)
+
+The coverage was improved by 50%, initially being 50% and now being 100%. The coverage was improved due creating 2 tests to hit each branch that exists in the function that was not hit before. 
 
 **Rares Stefan Dica**
 
@@ -195,6 +207,14 @@ Screenshots of the coverage result before:
 ## Statement of individual contributions
 
 <Write what each group member did>
+
+**Alara Karadeniz** Contribution:
+
+My personal contribution consisted of:
+- helping in finding a relevant project
+- contributing in trying to create the coverage tool
+- helping in trying to organize meetings
+- doing my part regarding the whole main tasks: instrumenting my functions, screenshotting the results for the before and after coverages
 
 **Rares Dica** Contribution:
 
