@@ -74,6 +74,24 @@ Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/3a6c4a685
 
 Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20IS_BINARY_WRITER%20CATALIN/coverageBEFORE2.png)
 
+**Ana-Maria Musca**
+
+Function 1:
+
+Name: "make_str"
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/71d46eed43359d72a335026824a2476b7a56ad5e
+
+Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20MAKE_STR%20ANA-MARIA/coverageBeforeTests.PNG)
+
+Function 2:
+
+Name: "should_strip_ansi"
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/71d46eed43359d72a335026824a2476b7a56ad5e 
+
+Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20SHOULD_STRIP_ANSI%20ANA-MARIA/coverageBeforeTests.PNG)
+
 ## Coverage improvement
 
 ### Individual tests
@@ -140,6 +158,28 @@ Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-I
 
 The coverage improvement was by 100%, initially being 66%. The coverage improved due to the new tests covering both the try and except parts of the function.
 
+**Ana-Maria Musca**
+
+Test 1:
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/71d46eed43359d72a335026824a2476b7a56ad5e
+
+Screenshot of old coverage: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20MAKE_STR%20ANA-MARIA/coverageBeforeTests.PNG)
+
+Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20MAKE_STR%20ANA-MARIA/coverageAfterTests.PNG)
+
+The coverage improvement was by 75%, initially being 25%, now it is 100%. The coverage improved because the new test now also covers the case when the input is provided unter byte form, the try and the exception part of the function.
+
+Test 2:
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/71d46eed43359d72a335026824a2476b7a56ad5e
+
+Screenshot of old coverage: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20SHOULD_STRIP_ANSI%20ANA-MARIA/coverageBeforeTests.PNG)
+
+Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20SHOULD_STRIP_ANSI%20ANA-MARIA/coverageAfterTests.PNG)
+
+The coverage improvement was by 50%, initially being 50%, now it is 100%. The coverage improved due to the new tests covering both the case when a color is provided and when a stream argument has a None value.
+
 ### Overall
 
 Screenshots of the coverage result before:
@@ -171,4 +211,12 @@ My personal contribution consisted of:
 - forked the repository
 - set up organizational rules for using the repository, such as patterns
 - assisting team members in setting up different tools, such as coverage.py and lizard
+- doing my part regarding the whole main tasks: instrumenting my functions, screenshotting the results for the before and after coverages
+
+**Ana-Maria Musca** Contribution:
+
+My personal contribution consisted of:
+- helping in finding a relevant project
+- mobilized the team and scheduled meetings for working on the project and checking every member's progress
+- having contribution in designing our coverage tool
 - doing my part regarding the whole main tasks: instrumenting my functions, screenshotting the results for the before and after coverages
