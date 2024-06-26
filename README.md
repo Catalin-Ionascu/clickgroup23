@@ -24,7 +24,6 @@ The coverage tool used was coverage.py with command coverage run -m pytest, cove
 
 ### Your own coverage tool
 
-<The following is supposed to be repeated for each group member>
 
 **Alara Karadeniz**
 
@@ -102,7 +101,6 @@ Screenshot of instrumentation working before adding tests: ![alt text](https://g
 
 ### Individual tests
 
-<The following is supposed to be repeated for each group member>
 
 **Alara Karadeniz**
 
@@ -208,7 +206,6 @@ Screenshot of the coverage result after:
 
 ## Statement of individual contributions
 
-<Write what each group member did>
 
 **Alara Karadeniz** Contribution:
 
