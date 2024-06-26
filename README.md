@@ -38,7 +38,7 @@ The coverage tool used was coverage.py with command coverage run -m pytest, cove
 
 <Provide the same kind of information provided for Function 1>
 
-Rares Stefan Dica
+**Rares Stefan Dica**
 
 Function 1:
 
@@ -55,6 +55,24 @@ Name: "get_text_stream"
 Link to commit: https://github.com/pallets/click/commit/0858e7bffd56ad7ec2fe7c8b7b7bbc855212f133
 
 Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20GET_TEXT_STREAM%20RARES/Coverage%20report%20before/coverageBeforeTests.PNG)
+
+**Constantin-Catalin Ionascu**
+
+Function 1:
+
+Name: "_is_binary_reader"
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/3a6c4a6855251c8b261b1f07c62fef0db0de438f
+
+Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20IS_BINARY_READER%20CATALIN/coverageBEFORE1.png)
+
+Function 2:
+
+Name: "_is_binary_writer"
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/3a6c4a6855251c8b261b1f07c62fef0db0de438f
+
+Screenshot of instrumentation working before adding tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20IS_BINARY_WRITER%20CATALIN/coverageBEFORE2.png)
 
 ## Coverage improvement
 
@@ -78,7 +96,7 @@ Screenshot of instrumentation working before adding tests: ![alt text](https://g
 
 <Provide the same kind of information provided for Test 1>
 
-Rares Stefan Dica
+**Rares Stefan Dica**
 
 Test 1:
 
@@ -100,6 +118,28 @@ Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-I
 
 The coverage improvement was by 100%, initially being 0%. The coverage improved due to the new tests covering both the try and error parts of the function.
 
+**Constantin-Catalin Ionascu**
+
+Test 1:
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/3a6c4a6855251c8b261b1f07c62fef0db0de438f
+
+Screenshot of old coverage: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20IS_BINARY_READER%20CATALIN/coverageBEFORE1.png)
+
+Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%201%20IS_BINARY_READER%20CATALIN/coverageAFTER1.png)
+
+The coverage improvement was by 100%, initially being 50%. The coverage improved due to the new tests covering both the try and except parts of the function.
+
+Test 2:
+
+Link to commit: https://github.com/Catalin-Ionascu/clickgroup23/commit/3a6c4a6855251c8b261b1f07c62fef0db0de438f
+
+Screenshot of old coverage: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20IS_BINARY_WRITER%20CATALIN/coverageBEFORE2.png)
+
+Screenshot of new coverage after tests: ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Function%202%20IS_BINARY_WRITER%20CATALIN/coverageAFTER2.png)
+
+The coverage improvement was by 100%, initially being 66%. The coverage improved due to the new tests covering both the try and except parts of the function.
+
 ### Overall
 
 Screenshots of the coverage result before:
@@ -116,10 +156,19 @@ Screenshots of the coverage result before:
 
 <Write what each group member did>
 
-Rares Dica Contribution:
+**Rares Dica** Contribution:
 
 My personal contribution consisted of:
 - helping in finding a relevant project
 - having a big contribution in building the coverage script for calculating the coverage
 - dealing with organizational matters such as structuring the repository
-- doing my part regarding the whole main tasks: instrumenting my functions, screenshoting the results for the before and after coverages
+- doing my part regarding the whole main tasks: instrumenting my functions, screenshotting the results for the before and after coverages
+
+**Constantin-Catalin Ionascu** Contribution:
+
+My personal contribution consisted of:
+- helping in the final moments of finding a relevant project
+- forked the repository
+- set up organizational rules for using the repository, such as patterns
+- assisting team members in setting up different tools, such as coverage.py and lizard
+- doing my part regarding the whole main tasks: instrumenting my functions, screenshotting the results for the before and after coverages
