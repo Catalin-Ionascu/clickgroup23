@@ -148,17 +148,22 @@ class _WindowsConsoleReader(_WindowsConsoleRawIOBase):
             return 0
         return 2 * code_units_read.value
 
-
+fd6 = open("_get_error_message.txt", mode="w")
 class _WindowsConsoleWriter(_WindowsConsoleRawIOBase):
     def writable(self):
         return True
 
     @staticmethod
     def _get_error_message(errno):
+        fd6.write("3 - Number of branches\n")
         if errno == ERROR_SUCCESS:
+            fd6.write("11 - ID Branch was hit\n")
             return "ERROR_SUCCESS"
         elif errno == ERROR_NOT_ENOUGH_MEMORY:
+            fd6.write("12 - ID Branch was hit\n")
             return "ERROR_NOT_ENOUGH_MEMORY"
+        else:
+            fd6.write("13 - ID Branch was hit\n") 
         return f"Windows error {errno}"
 
     def write(self, b):

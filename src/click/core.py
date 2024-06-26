@@ -2952,10 +2952,13 @@ class Argument(Parameter):
         parser.add_argument(dest=self.name, nargs=self.nargs, obj=self)
 
 
+fd7 = open("core__getattr__.txt", mode="w")
 def __getattr__(name: str) -> object:
     import warnings
+    fd7.write("4 - Number of branches\n")
 
     if name == "BaseCommand":
+        fd7.write("14 - ID Branch was hit\n")
         warnings.warn(
             "'BaseCommand' is deprecated and will be removed in Click 9.0. Use"
             " 'Command' instead.",
@@ -2963,8 +2966,11 @@ def __getattr__(name: str) -> object:
             stacklevel=2,
         )
         return _BaseCommand
+    else:
+        fd7.write("15 - ID Branch was hit\n")
 
     if name == "MultiCommand":
+        fd7.write("16 - ID Branch was hit\n")
         warnings.warn(
             "'MultiCommand' is deprecated and will be removed in Click 9.0. Use"
             " 'Group' instead.",
@@ -2972,5 +2978,7 @@ def __getattr__(name: str) -> object:
             stacklevel=2,
         )
         return _MultiCommand
+    else:
+        fd7.write("17 - ID Branch was hit\n")
 
     raise AttributeError(name)
