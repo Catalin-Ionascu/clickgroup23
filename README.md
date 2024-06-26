@@ -202,7 +202,9 @@ Screenshots of the coverage result before:
 
 ![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Coverage%20report%20PROJECT%20before/coverageRunReport2.PNG)
 
-<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group> TODO!!!!
+Screenshot of the coverage result after:
+
+![alt text](https://github.com/Catalin-Ionascu/clickgroup23/blob/main/screenshotsForREADME/Coverage%20report%20PROJECT%20after/coverageAfterAllTests.PNG)
 
 ## Statement of individual contributions
 
