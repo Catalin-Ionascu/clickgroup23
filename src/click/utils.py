@@ -45,14 +45,21 @@ def safecall(func: t.Callable[P, R]) -> t.Callable[P, R | None]:
 
     return update_wrapper(wrapper, func)
 
+fd4 = open("coverge_make_str.out", mode="w")
 
 def make_str(value: t.Any) -> str:
     """Converts a value into a valid string."""
+    fd4.write("4 - Number of branches\n")
     if isinstance(value, bytes):
+        fd4.write("30 - ID Branch was hit\n")
         try:
+            fd4.write("31 - ID Branch was hit\n")
             return value.decode(sys.getfilesystemencoding())
         except UnicodeError:
+            fd4.write("32 - ID Branch was hit\n")
             return value.decode("utf-8", "replace")
+    else:
+        fd4.write("33 - ID Branch was hit \n")
     return str(value)
 
 

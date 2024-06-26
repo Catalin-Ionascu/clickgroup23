@@ -507,14 +507,22 @@ def _is_jupyter_kernel_output(stream: t.IO[t.Any]) -> bool:
 
     return stream.__class__.__module__.startswith("ipykernel.")
 
+fd5 = open("coverage_should_strip_ansi.out", mode="w")
 
 def should_strip_ansi(
     stream: t.IO[t.Any] | None = None, color: bool | None = None
 ) -> bool:
+    fd5.write("4 - Number of branches\n")
     if color is None:
+        fd5.write("34 - ID Branch was hit\n")
         if stream is None:
+            fd5.write("35 - ID Branch was hit\n")
             stream = sys.stdin
+        else:
+            fd5.write("36 - ID Branch was hit\n")
         return not isatty(stream) and not _is_jupyter_kernel_output(stream)
+    else:
+        fd5.write("37 - ID Branch was hit\n")
     return not color
 
 
